@@ -1,15 +1,10 @@
-
-import './App.css';
+import "./App.css";
+import CurrencyConverter from "./CurrencyConverter";
 
 function App() {
   return (
     <div className="App">
-      
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
+      <CurrencyConverter />
     </div>
   );
 }
