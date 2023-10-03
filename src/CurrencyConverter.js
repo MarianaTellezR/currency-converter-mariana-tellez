@@ -1,5 +1,13 @@
 import React from "react";
+import "./CurrencyConverter.css";
 
 export default function CurrencyConverter() {
-  return <h1>Hello from Currency Converter</h1>;
+  return (
+    <div className="CurrencyConverter">
+      <div className="row">
+        <div className="left-side">Left side</div>
+        <div className="right-side">Right side</div>
+      </div>
+    </div>
+  );
 }
