@@ -1,4 +1,11 @@
 .CurrencyConverter {
-  background-color: white;
   color: black;
+}
+
+.CurrencyConverter .left-side {
+  background-color: white;
+}
+
+.CurrencyConverter .right-side {
+  background-color: #3cbc7d;
 }
