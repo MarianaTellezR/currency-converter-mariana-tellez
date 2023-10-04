@@ -1,11 +1,30 @@
 .CurrencyConverter {
   color: black;
+  display: block;
+  margin: 0 auto;
+  padding: 50px 20px;
+  width: 85%;
+  max-width: 1400px;
 }
 
 .CurrencyConverter .left-side {
   background-color: white;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .CurrencyConverter .right-side {
   background-color: #3cbc7d;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: -2px 9px 24px 5px rgba(247, 245, 235, 0.2);
+}
+
+@media (max-width: 575px) {
+  .CurrencyConverter .left-side {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .CurrencyConverter .right-side {
+    border-radius: 0px 0px 10px 10px;
+  }
 }
