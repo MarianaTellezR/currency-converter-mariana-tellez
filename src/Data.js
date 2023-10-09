@@ -1,51 +1,47 @@
 import React, { useState } from "react";
 
 export default function Data() {
-  const [data, setData] = useState({
-    amount: 10,
-    from: "USD",
-    to: "MXN"
+  const [inputs, setInputs] = useState({
+    amount: "",
+    from: "",
+    to: "",
   });
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(data);
+    console.log(inputs);
   }
 
-  function updateAmount(event) {
-    setData({...data, amount: (event.target.value)})
-  }
-
-  function updateFrom(event) {
-    setData({ ...data, from: event.target.value });
-  }
-
-  function updateTo(event) {
-    setData({ ...data, to: event.target.value });
-  }
+  const handleInputChange = (e) => {
+    setInputs({
+      ...inputs,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   let form = (
     <form onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Enter an amount"
-        onChange={updateAmount}
+        onChange={handleInputChange}
+        name='amount'
       />
       <select
-        value={data.from}
-        onChange={updateFrom}
-        name="currencyFrom"
-        id="currencyFrom"
+        value={inputs.from}
+        name='from'
+        id='from'
+        onChange={handleInputChange}
       >
         <option value="yen">YEN</option>
         <option value="dolar">DOLAR</option>
         <option value="libra">LIBRA</option>
       </select>
       <select
-        value={data.to}
-        onChange={updateTo}
-        name="currencyTo"
-        id="currencyTo"
+        value={inputs.to}
+        name='to'
+        id='to'
+        onChange={handleInputChange}
       >
         <option value="yen">YEN</option>
         <option value="dolar">DOLAR</option>
