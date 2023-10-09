@@ -3,15 +3,23 @@ import React, { useState } from "react";
 export default function Data({ sendData }) {
   const [inputs, setInputs] = useState({
     amount: "",
-    from: "",
-    to: "",
+    from: "usd",
+    to: "yen",
   });
 
-  function handleSubmit(event) {
+  const [formError, setFormError] = useState(false);
+
+  const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(inputs);
-    sendData(inputs);
-  }
+
+    if (inputs.amount && inputs.from && inputs.to) {
+      setFormError(false);
+      sendData(inputs);
+    } else {
+      setFormError(true);
+    }
+  };
+
 
   const handleInputChange = (e) => {
     setInputs({
@@ -50,6 +58,7 @@ export default function Data({ sendData }) {
   return (
     <div className="Data">
       <h2>Get your exchange rate today!</h2>
+      {formError && <p>Please fill in all the fields.</p>}
       {form}
     </div>
   );
