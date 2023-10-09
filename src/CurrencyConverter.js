@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./CurrencyConverter.css";
 import Data from "./Data";
 import DataResults from "./DataResults";
+import DataNoResults from "./DataNoResults";
 
 export default function CurrencyConverter() {
   const [childData, setChildData] = useState(null);
@@ -19,7 +20,7 @@ export default function CurrencyConverter() {
           <Data sendData={handleData} />
         </div>
         <div className="col-12 col-sm-5 right-side ">
-          {childData && <DataResults data={childData} />}
+          {childData ? <DataResults data={childData} /> : <DataNoResults />}
         </div>
       </div>
     </div>
