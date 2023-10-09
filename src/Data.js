@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Data() {
+export default function Data({ sendData }) {
   const [inputs, setInputs] = useState({
     amount: "",
     from: "",
@@ -10,6 +10,7 @@ export default function Data() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(inputs);
+    sendData(inputs);
   }
 
   const handleInputChange = (e) => {
@@ -25,24 +26,19 @@ export default function Data() {
         type="text"
         placeholder="Enter an amount"
         onChange={handleInputChange}
-        name='amount'
+        name="amount"
       />
       <select
         value={inputs.from}
-        name='from'
-        id='from'
+        name="from"
+        id="from"
         onChange={handleInputChange}
       >
         <option value="yen">YEN</option>
         <option value="dolar">DOLAR</option>
         <option value="libra">LIBRA</option>
       </select>
-      <select
-        value={inputs.to}
-        name='to'
-        id='to'
-        onChange={handleInputChange}
-      >
+      <select value={inputs.to} name="to" id="to" onChange={handleInputChange}>
         <option value="yen">YEN</option>
         <option value="dolar">DOLAR</option>
         <option value="libra">LIBRA</option>
