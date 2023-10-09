@@ -3,8 +3,8 @@ import React, { useState } from "react";
 export default function Data({ sendData }) {
   const [inputs, setInputs] = useState({
     amount: "",
-    from: "usd",
-    to: "yen",
+    from: "",
+    to: "",
   });
 
   const [formError, setFormError] = useState(false);
@@ -42,11 +42,13 @@ export default function Data({ sendData }) {
         id="from"
         onChange={handleInputChange}
       >
+        <option value=""></option>
         <option value="yen">YEN</option>
         <option value="dolar">DOLAR</option>
         <option value="libra">LIBRA</option>
       </select>
       <select value={inputs.to} name="to" id="to" onChange={handleInputChange}>
+        <option value=""></option>
         <option value="yen">YEN</option>
         <option value="dolar">DOLAR</option>
         <option value="libra">LIBRA</option>
