@@ -42,13 +42,13 @@ export default function Data({ sendData }) {
         id="from"
         onChange={handleInputChange}
       >
-        <option value=""></option>
+        <option value="">Select</option>
         <option value="yen">YEN</option>
         <option value="dolar">DOLAR</option>
         <option value="libra">LIBRA</option>
       </select>
       <select value={inputs.to} name="to" id="to" onChange={handleInputChange}>
-        <option value=""></option>
+        <option value="">Select</option>
         <option value="yen">YEN</option>
         <option value="dolar">DOLAR</option>
         <option value="libra">LIBRA</option>
