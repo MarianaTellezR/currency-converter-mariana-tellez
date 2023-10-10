@@ -34,12 +34,14 @@ export default function Data({ sendData }) {
         placeholder="Enter an amount"
         onChange={handleInputChange}
         name="amount"
+        required
       />
       <select
         value={inputs.from}
         name="from"
         id="from"
         onChange={handleInputChange}
+        required
       >
         <option value="">Select</option>
         <option value="eur">EUR Euro</option>
@@ -76,7 +78,13 @@ export default function Data({ sendData }) {
         <option value="thb">THB Thai Baht</option>
         <option value="zar">ZAR South African Rand</option>
       </select>
-      <select value={inputs.to} name="to" id="to" onChange={handleInputChange}>
+      <select
+        value={inputs.to}
+        name="to"
+        id="to"
+        onChange={handleInputChange}
+        required
+      >
         <option value="">Select</option>
         <option value="eur">EUR Euro</option>
         <option value="usd">USD US Dollar</option>
