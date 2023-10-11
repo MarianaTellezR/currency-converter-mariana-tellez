@@ -33,7 +33,7 @@ export default function Data({ sendData }) {
       <label htmlFor="amount">Enter the amount:</label>
       <input
         type="text"
-        placeholder="Enter an amount"
+        placeholder="Amount"
         onChange={handleInputChange}
         name="amount"
         id="amount"
