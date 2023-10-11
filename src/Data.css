@@ -3,11 +3,13 @@
 }
 
 .Data h2 {
-    margin: 19px 0px;
+  margin: 19px 0px;
+  color: #2f9763;
 }
+
 .Data p {
-    text-align: justify;
-    margin: 15px 0px;
+  text-align: justify;
+  margin: 15px 0px;
 }
 
 .Data form {
@@ -33,10 +35,12 @@
   border-radius: 5px;
   background-color: #222222;
   color: white;
-  border: 1px solid #222222;
+  border: 2px solid #222222;
   transition: all 120ms ease-in-out;
 }
 
 .Data button:hover {
-  background-color: #424242;
+  background-color: #2c9e65;
+  border: 2px solid #2c9e65;
+  color: white;
 }
