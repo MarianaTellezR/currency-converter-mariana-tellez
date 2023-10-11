@@ -1,5 +1,13 @@
 .Data {
-  margin: 40px 30px;
+  margin: 45px 30px;
+}
+
+.Data h2 {
+    margin: 19px 0px;
+}
+.Data p {
+    text-align: justify;
+    margin: 15px 0px;
 }
 
 .Data form {

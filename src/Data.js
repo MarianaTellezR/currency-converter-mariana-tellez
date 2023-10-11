@@ -30,7 +30,7 @@ export default function Data({ sendData }) {
 
   let form = (
     <form onSubmit={handleSubmit}>
-      <label for="amount">Enter the amount:</label>
+      <label htmlFor="amount">Enter the amount:</label>
       <input
         type="text"
         placeholder="Enter an amount"
@@ -40,7 +40,7 @@ export default function Data({ sendData }) {
         required
       />
 
-      <label for="from">From:</label>
+      <label htmlFor="from">From:</label>
       <select
         value={inputs.from}
         name="from"
@@ -84,7 +84,7 @@ export default function Data({ sendData }) {
         <option value="zar">ZAR South African Rand</option>
       </select>
 
-      <label for="to">To:</label>
+      <label htmlFor="to">To:</label>
       <select
         value={inputs.to}
         name="to"
@@ -134,6 +134,13 @@ export default function Data({ sendData }) {
   return (
     <div className="Data">
       <h2>Get your exchange rate today!</h2>
+      <p>
+        Say goodbye to the complexities of international currency conversion and
+        embrace the simplicity and efficiency of CurrenSee. Our user-friendly
+        web app empowers you to effortlessly convert currencies from around the
+        world, providing you with real-time, accurate exchange rates at your
+        fingertips.
+      </p>
       {formError && <p>Please fill in all the fields.</p>}
       {form}
     </div>
