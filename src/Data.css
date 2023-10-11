@@ -1,8 +1,17 @@
 .Data {
-  margin: 20px;
+  margin: 20px 25px;
 }
 
 .Data form {
   display: flex;
   flex-direction: column;
+}
+
+.Data label {
+    text-align: start;
+    padding: 10px 0px;
+}
+
+.Data input, .Data select {
+    margin: 5px 0px;
 }
