@@ -1,0 +1,8 @@
+.Data {
+  margin: 20px;
+}
+
+.Data form {
+  display: flex;
+  flex-direction: column;
+}

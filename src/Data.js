@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Data.css";
 
 export default function Data({ sendData }) {
   const [inputs, setInputs] = useState({
@@ -29,13 +30,17 @@ export default function Data({ sendData }) {
 
   let form = (
     <form onSubmit={handleSubmit}>
+      <label for="amount">Enter the amount:</label>
       <input
         type="text"
         placeholder="Enter an amount"
         onChange={handleInputChange}
         name="amount"
+        id="amount"
         required
       />
+
+      <label for="from">From:</label>
       <select
         value={inputs.from}
         name="from"
@@ -78,6 +83,8 @@ export default function Data({ sendData }) {
         <option value="thb">THB Thai Baht</option>
         <option value="zar">ZAR South African Rand</option>
       </select>
+
+      <label for="to">To:</label>
       <select
         value={inputs.to}
         name="to"
