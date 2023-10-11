@@ -127,7 +127,7 @@ export default function Data({ sendData }) {
         <option value="thb">THB Thai Baht</option>
         <option value="zar">ZAR South African Rand</option>
       </select>
-      <button type="submit">Submit</button>
+      <button type="submit">Get exchange rate</button>
     </form>
   );
 

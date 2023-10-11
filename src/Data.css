@@ -1,5 +1,5 @@
 .Data {
-  margin: 20px 25px;
+  margin: 35px 30px;
 }
 
 .Data form {
@@ -8,10 +8,27 @@
 }
 
 .Data label {
-    text-align: start;
-    padding: 10px 0px;
+  text-align: start;
+  padding: 10px 0px;
 }
 
-.Data input, .Data select {
-    margin: 5px 0px;
+.Data input,
+.Data select {
+  margin: 5px 0px;
+  padding: 4px 8px;
+}
+
+.Data button {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 12px 0px;
+  border-radius: 5px;
+  background-color: #222222;
+  color: white;
+  border: 1px solid #222222;
+  transition: all 120ms ease-in-out;
+}
+
+.Data button:hover {
+  background-color: #424242;
 }
