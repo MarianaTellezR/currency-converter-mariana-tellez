@@ -1,3 +1,11 @@
 .DataNoResults {
-    margin: 45px 30px;
+  margin: 45px 30px;
+}
+
+.DataNoResults img {
+  width: 90%;
+}
+
+.DataNoResults p {
+  text-align: justify;
 }
