@@ -10,6 +10,9 @@
 .CurrencyConverter .left-side {
   background-color: white;
   border-radius: 10px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .CurrencyConverter .right-side {
@@ -17,6 +20,9 @@
   color: white;
   border-radius: 0px 10px 10px 0px;
   box-shadow: -2px 9px 24px 5px rgba(247, 245, 235, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (max-width: 575px) {

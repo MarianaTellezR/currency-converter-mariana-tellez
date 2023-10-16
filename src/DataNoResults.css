@@ -8,4 +8,10 @@
 
 .DataNoResults p {
   text-align: justify;
+  line-height: 1.7;
+}
+
+.DataNoResults h2 {
+  padding: 18px auto;
+  line-height: 1.7;
 }

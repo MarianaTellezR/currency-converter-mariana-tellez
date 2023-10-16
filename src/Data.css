@@ -2,14 +2,22 @@
   margin: 45px 30px;
 }
 
-.Data h2 {
-  margin: 19px 0px;
+.Data h1 {
+  margin: 20px 0px;
+  padding: 5px;
   color: #2f9763;
+}
+
+.Data h2 {
+  color: #617e6f;
+  margin-bottom: 19px;
+  line-height: 1.5;
 }
 
 .Data p {
   text-align: justify;
   margin: 15px 0px;
+  line-height: 1.7;
 }
 
 .Data form {
@@ -20,6 +28,7 @@
 .Data label {
   text-align: start;
   padding: 10px 0px;
+  color:#707070;
 }
 
 .Data input,

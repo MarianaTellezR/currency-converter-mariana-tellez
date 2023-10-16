@@ -133,7 +133,11 @@ export default function Data({ sendData }) {
 
   return (
     <div className="Data">
-      <h2>Get your exchange rate today!</h2>
+      <h1>🪙 Currency Converter</h1>
+      <h2>
+        Get Accurate and Real-Time Exchange Rates Today with Our Currency
+        Converter Web App!
+      </h2>
       <p>
         Say goodbye to the complexities of international currency conversion and
         embrace the simplicity and efficiency of CurrenSee. Our user-friendly
