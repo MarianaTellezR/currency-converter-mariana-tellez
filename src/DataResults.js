@@ -8,8 +8,9 @@ export default function DataResults({ data }) {
   }
 
   function getApiInfo() {
+    let base = "MXN";
     let apiKey = "fca_live_i6RaT2DvGKzu5u40FhbLUdnt46MqeADYktO9ONtq";
-    let apiUrl = `https://api.freecurrencyapi.com/v1/latest?apikey=${apiKey}`;
+    let apiUrl = `https://api.freecurrencyapi.com/v1/latest?apikey=${apiKey}&base_currency=${base}`;
     axios.get(apiUrl).then(displayCurrencyData);
   }
 
