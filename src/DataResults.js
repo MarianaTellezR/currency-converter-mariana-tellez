@@ -3,6 +3,7 @@ import "./DataResults.css";
 import axios from "axios";
 
 export default function DataResults({ data }) {
+  let amount = data.amount;
   let base = data.from;
   let objective = data.to;
 
@@ -22,9 +23,9 @@ export default function DataResults({ data }) {
     <div>
       <h2>Your exchange rate:</h2>
       <ul>
-        <li>Data from Parent Component: {data.amount}</li>
-        <li>Data from Parent Component: {data.from}</li>
-        <li>Data from Parent Component: {data.to}</li>
+        <li>Data from Parent Component: {amount}</li>
+        <li>Data from Parent Component: {base}</li>
+        <li>Data from Parent Component: {objective}</li>
       </ul>
     </div>
   );
