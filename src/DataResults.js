@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./DataResults.css";
 import axios from "axios";
 
@@ -6,22 +6,23 @@ export default function DataResults({ data }) {
   let amount = data.amount;
   let base = data.from;
   let objective = data.to;
-  let result;
 
-  const displayCurrencyData = (response) => {
-    console.log(response);
-    result = amount * response.data.data[objective];
-    console.log(result);
-    return result;
-  };
+  const [result, setResult] = useState(null);
 
-  function getApiInfo() {
-    let apiKey = "fca_live_i6RaT2DvGKzu5u40FhbLUdnt46MqeADYktO9ONtq";
-    let apiUrl = `https://api.freecurrencyapi.com/v1/latest?apikey=${apiKey}&base_currency=${base}&currencies=${base},${objective}`;
-    axios.get(apiUrl).then(displayCurrencyData);
-  }
+  useEffect(() => {
+    function displayCurrencyData(response) {
+      console.log(response);
+      setResult(amount * response.data.data[objective]);
+    }
 
-  getApiInfo();
+    function getApiInfo() {
+      let apiKey = "fca_live_i6RaT2DvGKzu5u40FhbLUdnt46MqeADYktO9ONtq";
+      let apiUrl = `https://api.freecurrencyapi.com/v1/latest?apikey=${apiKey}&base_currency=${base}&currencies=${base},${objective}`;
+      axios.get(apiUrl).then(displayCurrencyData);
+    }
+
+    getApiInfo();
+  }, [amount, base, objective]);
 
   return (
     <div>
