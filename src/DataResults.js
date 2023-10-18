@@ -6,9 +6,11 @@ export default function DataResults({ data }) {
   let amount = data.amount;
   let base = data.from;
   let objective = data.to;
+  let results = 0;
 
   function displayCurrencyData(response) {
     console.log(response);
+    
   }
 
   function getApiInfo() {
