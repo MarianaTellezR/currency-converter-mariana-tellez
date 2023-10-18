@@ -6,12 +6,14 @@ export default function DataResults({ data }) {
   let amount = data.amount;
   let base = data.from;
   let objective = data.to;
-  let results = 0;
+  let result;
 
-  function displayCurrencyData(response) {
+  const displayCurrencyData = (response) => {
     console.log(response);
-    
-  }
+    result = amount * response.data.data[objective];
+    console.log(result);
+    return result;
+  };
 
   function getApiInfo() {
     let apiKey = "fca_live_i6RaT2DvGKzu5u40FhbLUdnt46MqeADYktO9ONtq";
@@ -28,6 +30,7 @@ export default function DataResults({ data }) {
         <li>Data from Parent Component: {amount}</li>
         <li>Data from Parent Component: {base}</li>
         <li>Data from Parent Component: {objective}</li>
+        {result && <li>Result: {result}</li>}
       </ul>
     </div>
   );
