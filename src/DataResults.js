@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./DataResults.css";
 import axios from "axios";
+import DisplayResults from "./DisplayResults";
 
 export default function DataResults({ data }) {
   let amount = data.amount;
@@ -26,13 +27,12 @@ export default function DataResults({ data }) {
 
   return (
     <div>
-      <h2>Your exchange rate:</h2>
-      <ul>
-        <li>Data from Parent Component: {amount}</li>
-        <li>Data from Parent Component: {base}</li>
-        <li>Data from Parent Component: {objective}</li>
-        {result && <li>Result: {result}</li>}
-      </ul>
+      <DisplayResults
+        amount={amount}
+        base={base}
+        objective={objective}
+        result={result}
+      />
     </div>
   );
 }
