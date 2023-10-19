@@ -2,6 +2,11 @@
   margin: 15px;
 }
 
+.DisplayResults .circle {
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
 .DisplayResults .arrows {
   width: 10%;
   min-width: 35px;
