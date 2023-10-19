@@ -1,4 +1,6 @@
 import React from "react";
+import arrows from "./img/arrow.png";
+import "./DisplayResults.css";
 
 export default function DisplayResults(props) {
   return (
@@ -9,7 +11,7 @@ export default function DisplayResults(props) {
       <h3>
         {props.amount} {props.base}
       </h3>
-      <p>Flechas Imagen</p>
+      <img src={arrows} alt="Conversion" className="arrows" />
       <div className="circle">
         <h4>Mexican Peso</h4>
         <h2>

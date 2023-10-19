@@ -1,0 +1,10 @@
+.DisplayResults {
+  margin: 15px;
+}
+
+.DisplayResults .arrows {
+  width: 10%;
+  min-width: 35px;
+  margin: 15px 10px;
+  padding: 2px;
+}
