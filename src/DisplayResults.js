@@ -12,7 +12,7 @@ export default function DisplayResults(props) {
         {props.amount} {props.base}
       </h3>
       <img src={arrows} alt="Conversion" className="arrows" />
-      <div className="circle">
+      <div className="square">
         <h4>Mexican Peso</h4>
         <h2>
           {props.result}
