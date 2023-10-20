@@ -3,11 +3,11 @@
 }
 
 .DisplayResults .square {
-  border: 2px solid rgb(245, 216, 52);
-  background-color: rgb(245, 216, 52);
+  border: 2px solid rgb(253, 253, 253);
+  background-color: rgb(245, 245, 244);
   color: rgb(20, 18, 18);
   width: 85%;
-  border-radius: 20px;
+  border-radius: 0px;
   display: block;
   margin: 15px auto;
   padding: 25px 14px;
