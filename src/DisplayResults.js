@@ -3,11 +3,6 @@ import arrows from "./img/arrow.png";
 import "./DisplayResults.css";
 
 export default function DisplayResults(props) {
-  let amount = props.amount;
-  let base = props.base;
-  let objective = props.objective;
-  let result = props.result;
-
   const currencies = {
     EUR: {
       name: "Euro",
@@ -142,6 +137,12 @@ export default function DisplayResults(props) {
       locale: "en-ZA",
     },
   };
+
+  let base = props.base;
+  const amount = props.amount;
+
+  let objective = props.objective;
+  const result = props.result;
 
   return (
     <div className="DisplayResults">
