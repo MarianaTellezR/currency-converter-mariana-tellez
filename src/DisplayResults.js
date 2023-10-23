@@ -139,22 +139,29 @@ export default function DisplayResults(props) {
   };
 
   let base = props.base;
-  const amount = props.amount;
+  const amount = new Intl.NumberFormat(currencies[base].locale, {
+    style: "currency",
+    currency: base,
+  }).format(props.amount);
+  //props.amount;
 
   let objective = props.objective;
-  const result = props.result;
+  const result = new Intl.NumberFormat(currencies[objective].locale, {
+    style: "currency",
+    currency: objective,
+  }).format(props.result);
 
   return (
     <div className="DisplayResults">
       <h1>Your exchange rate</h1>
 
-      <h4>US Dollar</h4>
+      <h4>{currencies[base].name}</h4>
       <h3>
         {amount} {base}
       </h3>
       <img src={arrows} alt="Conversion" className="arrows" />
       <div className="square">
-        <h4>Mexican Peso</h4>
+        <h4>{currencies[objective].name}</h4>
         <h2>
           {result}
           <small> {objective}</small>
