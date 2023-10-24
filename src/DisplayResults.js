@@ -157,18 +157,20 @@ export default function DisplayResults(props) {
 
       <hr />
 
-      <h4>{currencies[base].name}</h4>
-      <h3>
-        {amount} {base}
-      </h3>
-      <img src={arrows} alt="Conversion" className="arrows" />
-      <div className="square">
-        <h4>{currencies[objective].name}</h4>
-        <h2>
-          {result}
-          <small> {objective}</small>
-        </h2>
-      </div>
+      <section>
+        <h4 className="base-name">{currencies[base].name}</h4>
+        <h3>
+          {amount} {base}
+        </h3>
+        <img src={arrows} alt="Conversion" className="arrows" />
+        <div className="square">
+          <h4 className="objective-name">{currencies[objective].name}</h4>
+          <h2>
+            {result}
+            <small> {objective}</small>
+          </h2>
+        </div>
+      </section>
     </div>
   );
 }

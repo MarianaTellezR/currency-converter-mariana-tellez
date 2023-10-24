@@ -3,14 +3,11 @@
 }
 
 .DisplayResults .square {
-  border: 2px solid rgb(253, 253, 253);
-  background-color: rgb(245, 245, 244);
-  color: rgb(20, 18, 18);
+  color: rgb(255, 255, 255);
   width: 85%;
   border-radius: 0px;
   display: block;
   margin: 15px auto;
-  padding: 25px 14px;
 }
 
 .DisplayResults .arrows {
@@ -28,4 +25,28 @@
 .DisplayResults hr {
   height: 2px;
   background-color: white;
+}
+
+.DisplayResults section {
+  margin: 36px 10px;
+  padding: 10px 0px;
+}
+
+.DisplayResults .base-name {
+  font-size: 16px;
+}
+
+.DisplayResults h3 {
+  font-size: 25px;
+  margin: 18px 5px;
+}
+
+.DisplayResults .objective-name {
+  font-size: 24px;
+  margin: 25px 5px;
+}
+
+.DisplayResults h2 {
+  font-size: 35px;
+  margin: 20px;
 }
