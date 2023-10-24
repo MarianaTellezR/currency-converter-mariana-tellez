@@ -155,6 +155,8 @@ export default function DisplayResults(props) {
     <div className="DisplayResults">
       <h1>Your exchange rate</h1>
 
+      <hr />
+
       <h4>{currencies[base].name}</h4>
       <h3>
         {amount} {base}

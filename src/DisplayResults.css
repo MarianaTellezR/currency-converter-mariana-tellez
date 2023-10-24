@@ -24,3 +24,8 @@
   margin: 20px 15px;
   padding: 8px;
 }
+
+.DisplayResults hr {
+  height: 2px;
+  background-color: white;
+}
