@@ -1,7 +1,6 @@
 import React from "react";
 import arrows from "./img/arrow.png";
 import "./DisplayResults.css";
-import Date from "./Date";
 
 export default function DisplayResults(props) {
   const currencies = {
@@ -170,7 +169,6 @@ export default function DisplayResults(props) {
           <small> {objective}</small>
         </h2>
       </div>
-      <Date />
     </div>
   );
 }
