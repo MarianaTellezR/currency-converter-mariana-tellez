@@ -3,6 +3,7 @@ import arrows from "./img/arrow.png";
 import "./DisplayResults.css";
 
 export default function DisplayResults(props) {
+  //Add link to images country
   const currencies = {
     EUR: {
       name: "Euro",
