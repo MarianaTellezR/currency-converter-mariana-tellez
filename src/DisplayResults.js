@@ -1,6 +1,7 @@
 import React from "react";
 import arrows from "./img/arrow.png";
 import "./DisplayResults.css";
+import Flag from "./Flag";
 
 export default function DisplayResults(props) {
   //Add link to images country
@@ -159,12 +160,14 @@ export default function DisplayResults(props) {
       <hr />
 
       <section>
+        <Flag />
         <h4 className="base-name">{currencies[base].name}</h4>
         <h3>
           {amount} {base}
         </h3>
         <img src={arrows} alt="Conversion" className="arrows" />
         <div className="square">
+          <Flag />
           <h4 className="objective-name">{currencies[objective].name}</h4>
           <h2>
             {result}
