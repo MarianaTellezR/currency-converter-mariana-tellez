@@ -160,14 +160,14 @@ export default function DisplayResults(props) {
       <hr />
 
       <section>
-        <Flag />
+        <Flag flag={base} />
         <h4 className="base-name">{currencies[base].name}</h4>
         <h3>
           {amount} {base}
         </h3>
         <img src={arrows} alt="Conversion" className="arrows" />
         <div className="square">
-          <Flag />
+          <Flag flag={objective} />
           <h4 className="objective-name">{currencies[objective].name}</h4>
           <h2>
             {result}
