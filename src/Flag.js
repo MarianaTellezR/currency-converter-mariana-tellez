@@ -1,4 +1,5 @@
 import React from "react";
+import "./Flag.css";
 
 export default function Flag(props) {
   return (
