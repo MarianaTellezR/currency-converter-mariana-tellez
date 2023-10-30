@@ -50,3 +50,18 @@
   font-size: 35px;
   margin: 20px;
 }
+
+@media (max-width: 800px) {
+  .DisplayResults h2 {
+    font-size: 25px;
+    margin: 18px 5px;
+  }
+}
+
+@media (max-width: 630px) {
+  .DisplayResults h2,
+  .DisplayResults h3 {
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+}
