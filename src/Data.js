@@ -138,9 +138,9 @@ export default function Data({ sendData }) {
         Get Accurate and Real-Time Exchange Rates Today with Our Currency
         Converter Web App!
       </h2>
-      <p>
+      <p id="description-text">
         Say goodbye to the complexities of international currency conversion and
-        embrace the simplicity and efficiency of CurrenSee. Our user-friendly
+        embrace the simplicity and efficiency. Our user-friendly
         web app empowers you to effortlessly convert currencies from around the
         world, providing you with real-time, accurate exchange rates at your
         fingertips.

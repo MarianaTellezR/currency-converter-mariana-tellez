@@ -29,7 +29,7 @@
 .Data label {
   text-align: start;
   padding: 10px 0px;
-  color:#707070;
+  color: #707070;
 }
 
 .Data input,
@@ -54,3 +54,4 @@
   border: 2px solid #2c9e65;
   color: white;
 }
+
