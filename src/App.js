@@ -11,6 +11,8 @@ function App() {
           <a
             href="https://www.linkedin.com/in/mariana-tellez-resendiz/"
             title="Mariana's LinkedIn"
+            rel="noreferrer"
+            target="_blank"
           >
             Mariana Tellez Resendiz
           </a>
