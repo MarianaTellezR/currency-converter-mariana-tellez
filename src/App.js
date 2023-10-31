@@ -5,6 +5,9 @@ function App() {
   return (
     <div className="App">
       <CurrencyConverter />
+      <footer>
+        <p>Created by Mariana Tellez Resendiz</p>
+      </footer>
     </div>
   );
 }

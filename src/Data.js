@@ -140,9 +140,9 @@ export default function Data({ sendData }) {
       </h2>
       <p id="description-text">
         Say goodbye to the complexities of international currency conversion and
-        embrace the simplicity and efficiency. Our user-friendly
-        web app empowers you to effortlessly convert currencies from around the
-        world, providing you with real-time, accurate exchange rates at your
+        embrace the simplicity and efficiency. Our user-friendly web app
+        empowers you to effortlessly convert currencies from around the world,
+        providing you with real-time, accurate exchange rates at your
         fingertips.
       </p>
       {formError && <p>Please fill in all the fields.</p>}
