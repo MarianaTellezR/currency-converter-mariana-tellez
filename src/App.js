@@ -6,7 +6,15 @@ function App() {
     <div className="App">
       <CurrencyConverter />
       <footer>
-        <p>Created by Mariana Tellez Resendiz</p>
+        <p>
+          Created and coded by{" "}
+          <a
+            href="https://www.linkedin.com/in/mariana-tellez-resendiz/"
+            title="Mariana's LinkedIn"
+          >
+            Mariana Tellez Resendiz
+          </a>
+        </p>
       </footer>
     </div>
   );

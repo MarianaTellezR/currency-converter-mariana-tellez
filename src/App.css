@@ -9,3 +9,14 @@
   min-height: 100vh;
   color: white;
 }
+
+.App a {
+  color: rgb(43, 68, 206);
+  text-decoration: none;
+  transition: all 160ms ease-in-out;
+}
+
+.App a:hover {
+  color: rgb(56, 69, 143);
+  cursor: pointer;
+}
