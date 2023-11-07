@@ -51,7 +51,7 @@
   margin: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .DisplayResults h2 {
     font-size: 25px;
     margin: 18px 5px;
